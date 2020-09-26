@@ -14,7 +14,7 @@ public class OwnerController {
 	@Autowired
 	private OwnerService ownerService;
 
-	@RequestMapping("/index")
+	@RequestMapping
 	public String ListOwners(Model model) {
 
 		model.addAttribute("owners", ownerService.findAll());
